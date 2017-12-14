@@ -83,7 +83,7 @@ function keycontrol(k){
 		xmovement[0] = 0;
 		ymovement[0] = 1;
 	}
-	else if (k.keyCode == 42 && endgame == true){
+	else if (k.keyCode == 82 && endgame == true){
 		endgame = false;
 		tryagain()
 	}
