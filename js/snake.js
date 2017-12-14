@@ -67,19 +67,19 @@ function gameloop(){
 window.addEventListener("load", gameloop, true);
 
 function keycontrol(k){
-	if (k.keyCode == 65 && xmovement[0] != 1){
+	if (k.keyCode == 72 && xmovement[0] != 1){
 		xmovement[0] = -1;
 		ymovement[0] = 0;
 	}
-	else if (k.keyCode == 87 && ymovement[0] != 1){
+	else if (k.keyCode == 75 && ymovement[0] != 1){
 		xmovement[0] = 0;
 		ymovement[0] = -1;
 	}
-	else if (k.keyCode == 68 && xmovement[0] != -1){
+	else if (k.keyCode == 76 && xmovement[0] != -1){
 		xmovement[0] = 1;
 		ymovement[0] = 0;
 	}
-	else if (k.keyCode == 83 && ymovement[0] != -1){
+	else if (k.keyCode == 74 && ymovement[0] != -1){
 		xmovement[0] = 0;
 		ymovement[0] = 1;
 	}
@@ -183,10 +183,6 @@ function tryagain(){
 	level = 1;
 	nom = true;
 	scorecontext.innerHTML = "Score: " +score+"		level:"+level;
-	instructions.innerHTML = "Controls: w = up, a = left, s = down, d = right ";
+	instructions.innerHTML = "Controls: k = up, h = left, j = down, l = right ";
 	replenish = setTimeout(gamemovementloop, 1000/6);
-
 }
-
-
-

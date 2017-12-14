@@ -1,6 +1,9 @@
-# SnakeGame
+# VIM Controlled SnakeGame
 
-## Freshman Year final assignment
+h - Left
+j - Down
+k - up
+l - right
 
 Snake in html5 canvas
-_Server taken down_
+_Hosted Server taken down_
