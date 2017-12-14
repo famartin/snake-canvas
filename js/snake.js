@@ -83,7 +83,7 @@ function keycontrol(k){
 		xmovement[0] = 0;
 		ymovement[0] = 1;
 	}
-	else if (k.keyCode == 13 && endgame == true){
+	else if (k.keyCode == 42 && endgame == true){
 		endgame = false;
 		tryagain()
 	}
@@ -148,7 +148,7 @@ function hitsomething(){
 		ycoordinateofbody[0] < 0 || ycoordinateofbody[0] >= height){
 		scorecontext.innerHTML = "Score: "
 		+score+"	Level: "	+level+" You lose!";
-		instructions.innerHTML = "Push enter to play again";
+		instructions.innerHTML = "Push \"r\" to play again";
 		endgame = true;
 		clearTimeout(replenish);
 	}
@@ -156,7 +156,7 @@ function hitsomething(){
 		if(crashintobody(xcoordinateofbody[0], ycoordinateofbody[0])){
 			scorecontext.innerHTML = "Score: "
 			+score+"	Level: "	+level+" You lose!";
-			instructions.innerHTML = "Push enter to play again";
+			instructions.innerHTML = "Push \"r\" to play again";
 			endgame = true;
 			clearTimeout(replenish);
 		}

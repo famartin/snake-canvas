@@ -25,11 +25,12 @@ body {
 
 h1{
 	text-align: center;
-	font-family: "Lucida Console";
+	font-family: "Arial";
 }
 h2{
 	text-align: center;
-	font-family: "Lucida Console";
+	font-family: "Arial";
+	margin: 20px;
 }
 
 #thescore{
@@ -40,7 +41,7 @@ a{color:#000080;}
 a:hover{color:black;}
 
 p {
-	font-family: "Lucida Sans Typewriter"; 
+	font-family: "Arial Sans Typewriter"; 
 	font-size: 12px;
 	padding-left:10px;
 	padding-right: 10px;
@@ -48,6 +49,6 @@ p {
 }
 
 #instruction, #thescore{
-	font-family: "Lucida Sans Typewriter";
+	font-family: "Arial Sans Typewriter";
 	font-size:10px;
 }
