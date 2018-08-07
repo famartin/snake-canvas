@@ -1,16 +1,20 @@
 body {
 	margin: 0 auto; 
 	width: 80%;
+	background: linear-gradient(#000, #001b3f);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .font {
 	font-family: 'Do Hyeon', sans-serif;
+	color: #93f9ba;
 }
 
 #snake-playground {
 	margin: 0 auto;
 	width:400px;
-	text-align: center;
+	text-align:center;
 	height:550px;
 }
 

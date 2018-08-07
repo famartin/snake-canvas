@@ -20,20 +20,20 @@ var endgame = false;
 
 function makeboard(){
 	mygame.lineWidth= 5;
-	mygame.fillStyle="#fff";
+	mygame.fillStyle="#000";
 	mygame.fillRect(0,0,width,height);
 	mygame.fill();
-	mygame.strokeStyle="#000080";
+	mygame.strokeStyle="#93f9ba";
 	mygame.strokeRect(0,0,width,height);
 }
 
 function snakeposition(x,y){
 	mygame.shadowBlur= 0;
 	mygame.lineWidth = 1;
-	mygame.fillStyle = "#000";
+	mygame.fillStyle = "#93f9ba";
 	mygame.fillRect(x,y,bodysize,bodysize);
 	mygame.fill();
-	mygame.strokeStyle="#000080";
+	mygame.strokeStyle="#93f9ba";
 	mygame.strokeRect(x,y,bodysize,bodysize);
 }
 
