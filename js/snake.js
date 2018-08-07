@@ -19,10 +19,8 @@ var nom = true;
 var endgame = false;
 
 function makeboard(){
-	mygame.shadowBlur=20;
-	mygame.shadowColor="black";
 	mygame.lineWidth= 5;
-	mygame.fillStyle="#C0C0C0";
+	mygame.fillStyle="#fff";
 	mygame.fillRect(0,0,width,height);
 	mygame.fill();
 	mygame.strokeStyle="#000080";
@@ -56,7 +54,7 @@ function makefood(){
 }
 
 function gameloop(){
-	mygame = document.getElementById("myart").getContext("2d");
+	mygame = document.getElementById("gameBoard").getContext("2d");
 	makeboard();
 	makesnake();
 	replenish = setTimeout(gamemovementloop, 100);
@@ -119,11 +117,10 @@ function eatfood(){
 		ymovement.push(ymovement[snakesize - 1]);
 
 		snakesize++;
-		score += 100;
-		if((score%1000) == 0)
+		score += 10;
+		if((score%100) == 0)
 			level++;
-		scorecontext.innerHTML = "Score: "
-		+score+"	Level: "+level;
+		scorecontext.innerHTML = "Score: " + score + "	Level: " + level;
 	}
 }
 
@@ -148,7 +145,7 @@ function hitsomething(){
 		ycoordinateofbody[0] < 0 || ycoordinateofbody[0] >= height){
 		scorecontext.innerHTML = "Score: "
 		+score+"	Level: "	+level+" You lose!";
-		instructions.innerHTML = "Push \"r\" to play again";
+		instructions.innerHTML = "Push \"Q\" to play again";
 		endgame = true;
 		clearTimeout(replenish);
 	}
@@ -156,7 +153,7 @@ function hitsomething(){
 		if(crashintobody(xcoordinateofbody[0], ycoordinateofbody[0])){
 			scorecontext.innerHTML = "Score: "
 			+score+"	Level: "	+level+" You lose!";
-			instructions.innerHTML = "Push \"r\" to play again";
+			instructions.innerHTML = "Push \"Q\" to play again";
 			endgame = true;
 			clearTimeout(replenish);
 		}
@@ -183,6 +180,6 @@ function tryagain(){
 	level = 1;
 	nom = true;
 	scorecontext.innerHTML = "Score: " +score+"		level:"+level;
-	instructions.innerHTML = "Controls: k = up, h = left, j = down, l = right ";
+	instructions.innerHTML = "Controls: W = Up, A = Left, S = Down, D = Right ";
 	replenish = setTimeout(gamemovementloop, 1000/6);
 }

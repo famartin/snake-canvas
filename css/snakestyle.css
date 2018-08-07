@@ -3,6 +3,10 @@ body {
 	width: 80%;
 }
 
+.font {
+	font-family: 'Do Hyeon', sans-serif;
+}
+
 #snake-playground {
 	margin: 0 auto;
 	width:400px;
@@ -15,32 +19,18 @@ body {
 	padding-top: 10px;
 }
 
-h1{
-	text-align: center;
-	font-family: "Arial";
-}
-h2{
-	text-align: center;
-	font-family: "Arial";
-	margin: 20px;
-}
-
 #thescore{
-	margin-top:40px;
+	margin-top:25%;
+	font-size: 2vw;
 }
 
 a{color:#000080;}
 a:hover{color:black;}
 
 p {
-	font-family: "Arial Sans Typewriter"; 
 	font-size: 12px;
 	padding-left:10px;
 	padding-right: 10px;
 	padding-bottom: 5px;
 }
 
-#instruction, #thescore{
-	font-family: "Arial Sans Typewriter";
-	font-size:10px;
-}
